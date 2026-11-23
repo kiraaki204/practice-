@@ -1,11 +1,694 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="A complete HTML learning and demonstration website">
+
+    <title>HTML Elements Guide</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            background-color: #f4f6f9;
+            color: #263238;
+        }
+
+        header {
+            background-color: #172554;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #1e3a8a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        section, article, aside {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            margin: 15px 0 8px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+        }
+
+        figure {
+            margin: 20px 0;
+        }
+
+        figure img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            color: gray;
+            font-size: 14px;
+        }
+
+        .highlight {
+            background: #dbeafe;
+            padding: 15px;
+            border-left: 4px solid #2563eb;
+            margin: 15px 0;
+        }
+
+        .layout {
+            display: flex;
+            gap: 20px;
+        }
+
+        .content {
+            flex: 3;
+        }
+
+        aside {
+            flex: 1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #dbeafe;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        input, select, textarea, button {
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        button {
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #bfdbfe;
+        }
+
+        @media (max-width: 700px) {
+            .layout {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>HTML Elements Guide</h1>
+
+        <p>Learn HTML Semantic and Non-Semantic Elements</p>
+
+    </header>
+
+
+    <!-- NAVIGATION -->
+    <nav aria-label="Main navigation">
+
+        <a href="#introduction">Introduction</a>
+        <a href="#text">Text</a>
+        <a href="#lists">Lists</a>
+        <a href="#media">Media</a>
+        <a href="#tables">Tables</a>
+        <a href="#forms">Forms</a>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+
+        <!-- INTRODUCTION SECTION -->
+        <section id="introduction">
+
+            <h2>Introduction to HTML</h2>
+
+            <p>
+                HTML stands for
+                <strong>HyperText Markup Language</strong>.
+                It is used to structure web pages.
+            </p>
+
+            <div class="highlight">
+
+                <h3>What are HTML elements?</h3>
+
+                <p>
+                    HTML elements are the building blocks
+                    of a webpage.
+                </p>
+
+                <span>HTML elements can be semantic or non-semantic.</span>
+
+            </div>
+
+            <h3>Types of HTML Elements</h3>
+
+            <ul>
+                <li>Semantic Elements</li>
+                <li>Non-Semantic Elements</li>
+            </ul>
+
+        </section>
+
+
+        <!-- TEXT ELEMENTS -->
+        <section id="text">
+
+            <h2>HTML Text Elements</h2>
+
+            <article>
+
+                <h3>Heading Elements</h3>
+
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+
+                <p>This is a paragraph element.</p>
+
+                <p>
+                    This is <strong>important text</strong>.
+                </p>
+
+                <p>
+                    This is <b>bold text</b>.
+                </p>
+
+                <p>
+                    This is <em>emphasized text</em>.
+                </p>
+
+                <p>
+                    This is <i>italic text</i>.
+                </p>
+
+                <p>
+                    This is <u>underlined text</u>.
+                </p>
+
+                <p>
+                    This is <mark>highlighted text</mark>.
+                </p>
+
+                <p>
+                    This is <small>small text</small>.
+                </p>
+
+                <p>
+                    Old price:
+                    <del>$100</del>
+                    New price:
+                    <ins>$75</ins>
+                </p>
+
+                <p>
+                    Water formula: H<sub>2</sub>O
+                </p>
+
+                <p>
+                    Mathematics: 10<sup>2</sup> = 100
+                </p>
+
+                <p>
+                    Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save.
+                </p>
+
+                <p>
+                    <abbr title="HyperText Markup Language">
+                        HTML
+                    </abbr>
+                    is a markup language.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h3>Quotation Elements</h3>
+
+                <blockquote cite="https://www.w3.org/">
+
+                    The web is built on open standards.
+
+                </blockquote>
+
+                <p>
+                    The teacher said:
+                    <q>Practice makes progress.</q>
+                </p>
+
+                <p>
+                    This is a citation:
+                    <cite>HTML Learning Guide</cite>
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h3>Code Elements</h3>
+
+                <p>Example of inline code:</p>
+
+                <code>console.log("Hello World");</code>
+
+                <p>Example of preformatted code:</p>
+
+                <pre>
+function greet() {
+    console.log("Hello");
+}
+                </pre>
+
+            </article>
+
+        </section>
+
+
+        <!-- LIST ELEMENTS -->
+        <section id="lists">
+
+            <h2>HTML Lists</h2>
+
+            <h3>Unordered List</h3>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+
+            <h3>Ordered List</h3>
+
+            <ol>
+                <li>Learn HTML</li>
+                <li>Learn CSS</li>
+                <li>Learn JavaScript</li>
+            </ol>
+
+
+            <h3>Description List</h3>
+
+            <dl>
+
+                <dt>HTML</dt>
+                <dd>Structures a webpage.</dd>
+
+                <dt>CSS</dt>
+                <dd>Styles a webpage.</dd>
+
+                <dt>JavaScript</dt>
+                <dd>Adds functionality to a webpage.</dd>
+
+            </dl>
+
+        </section>
+
+
+        <!-- MEDIA ELEMENTS -->
+        <section id="media">
+
+            <h2>HTML Media Elements</h2>
+
+            <h3>Image</h3>
+
+            <figure>
+
+                <img
+                    src="https://placehold.co/600x300"
+                    alt="Placeholder demonstration image"
+                    width="600"
+                >
+
+                <figcaption>
+                    Figure 1: An example of an HTML image.
+                </figcaption>
+
+            </figure>
+
+
+            <h3>Audio</h3>
+
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+
+
+            <h3>Video</h3>
+
+            <video controls width="400">
+
+                <source src="video.mp4" type="video/mp4">
+
+                Your browser does not support video.
+
+            </video>
+
+
+            <h3>Link</h3>
+
+            <p>
+                Visit
+                <a href="https://www.w3schools.com/html/">
+                    HTML tutorials
+                </a>
+                to learn more.
+            </p>
+
+        </section>
+
+
+        <!-- TABLE ELEMENTS -->
+        <section id="tables">
+
+            <h2>HTML Tables</h2>
+
+            <table>
+
+                <caption>Student Information</caption>
+
+                <thead>
+
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Marks</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>Ali</td>
+                        <td>HTML</td>
+                        <td>90</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ahmed</td>
+                        <td>CSS</td>
+                        <td>85</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sara</td>
+                        <td>JavaScript</td>
+                        <td>95</td>
+                    </tr>
+
+                </tbody>
+
+
+                <tfoot>
+
+                    <tr>
+                        <th colspan="2">Average Marks</th>
+                        <td>90</td>
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+        </section>
+
+
+        <!-- FORM ELEMENTS -->
+        <section id="forms">
+
+            <h2>HTML Forms</h2>
+
+            <form action="#" method="get">
+
+                <fieldset>
+
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Full Name:</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                    >
+
+
+                    <label for="email">Email:</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                    >
+
+
+                    <label for="password">Password:</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                    >
+
+
+                    <label for="age">Age:</label>
+
+                    <input
+                        type="number"
+                        id="age"
+                        name="age"
+                    >
+
+
+                    <label for="gender">Gender:</label>
+
+                    <select id="gender" name="gender">
+
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+
+                    </select>
+
+
+                    <p>Select your interests:</p>
+
+                    <label>
+                        <input type="checkbox" name="interest" value="html">
+                        HTML
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interest" value="css">
+                        CSS
+                    </label>
+
+
+                    <label for="message">Your Message:</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="Write something..."
+                    ></textarea>
+
+
+                    <button type="submit">Submit Form</button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+
+        <!-- OTHER HTML ELEMENTS -->
+        <section>
+
+            <h2>Other Useful HTML Elements</h2>
+
+            <h3>Details and Summary</h3>
+
+            <details>
+
+                <summary>What is HTML?</summary>
+
+                <p>
+                    HTML is a markup language used
+                    to structure web pages.
+                </p>
+
+            </details>
+
+
+            <h3>Progress Element</h3>
+
+            <label for="progress">Course Progress:</label>
+
+            <progress id="progress" value="70" max="100">
+                70%
+            </progress>
+
+
+            <h3>Meter Element</h3>
+
+            <label for="meter">Skill Level:</label>
+
+            <meter id="meter" value="0.8">
+                80%
+            </meter>
+
+
+            <h3>Time Element</h3>
+
+            <p>
+                Published on
+                <time datetime="2026-11-23">
+                    November 23, 2026
+                </time>
+            </p>
+
+
+            <h3>Address Element</h3>
+
+            <address>
+                Contact us at:
+                <a href="mailto:info@example.com">
+                    info@example.com
+                </a>
+            </address>
+
+
+            <h3>Line Break and Horizontal Rule</h3>
+
+            <p>
+                First line<br>
+                Second line
+            </p>
+
+            <hr>
+
+            <p>Content after horizontal rule.</p>
+
+        </section>
+
+
+        <!-- ASIDE -->
+        <aside>
+
+            <h2>Did You Know?</h2>
+
+            <p>
+                Semantic HTML improves accessibility
+                and helps search engines understand
+                the structure of your content.
+            </p>
+
+        </aside>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>&copy; 2026 HTML Elements Guide. All rights reserved.</p>
+
+        <p>
+            <a href="#introduction">Back to Top</a>
+        </p>
+
+    </footer>
+
 </body>
 </html>
