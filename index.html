@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A complete HTML learning and demonstration website">
-
-    <title>HTML Elements Guide</title>
+    <meta name="description"
+        content="Learn HTML semantic tags, their functions, examples, and how to use semantic elements to structure webpages.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="HTML semantic tags, semantic HTML, HTML elements">
+    <meta property="og:title" content="HTML Semantic Tags: Complete Guide">
+    <meta property="og:description" content="Learn HTML semantic tags with explanations and examples.">
+    <meta property="og:type" content="website">
+    <title>HTML Semantics tags: complete guide with examples</title>
 
     <style>
         * {
@@ -48,7 +53,9 @@
             padding: 20px;
         }
 
-        section, article, aside {
+        section,
+        article,
+        aside {
             background: white;
             padding: 25px;
             margin-bottom: 25px;
@@ -68,7 +75,8 @@
             margin-bottom: 12px;
         }
 
-        ul, ol {
+        ul,
+        ol {
             margin-left: 25px;
         }
 
@@ -112,7 +120,8 @@
             margin-top: 15px;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid #ddd;
             padding: 12px;
             text-align: left;
@@ -128,7 +137,10 @@
             gap: 12px;
         }
 
-        input, select, textarea, button {
+        input,
+        select,
+        textarea,
+        button {
             padding: 10px;
             font-size: 15px;
         }
@@ -170,7 +182,7 @@
     <!-- HEADER -->
     <header>
 
-        <h1>HTML Elements Guide</h1>
+        <h1>HTML Semantic Tags: Complete Guide with Examples</h1>
 
         <p>Learn HTML Semantic and Non-Semantic Elements</p>
 
@@ -188,6 +200,20 @@
         <a href="#forms">Forms</a>
 
     </nav>
+    <!-- TABLE OF CONTENTS -->
+    <section>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#introduction">Introduction to HTML</a></li>
+            <li><a href="#semantic-tags">What Are HTML Semantic Tags?</a></li>
+            <li><a href="#semantic-examples">Examples of HTML Semantic Tags</a></li>
+            <li><a href="#text">HTML Text Elements</a></li>
+            <li><a href="#lists">HTML Lists</a></li>
+            <li><a href="#media">HTML Media Elements</a></li>
+            <li><a href="#tables">HTML Tables</a></li>
+            <li><a href="#forms">HTML Forms</a></li>
+        </ul>
+    </section>
 
 
     <!-- MAIN CONTENT -->
@@ -347,6 +373,79 @@ function greet() {
         </section>
 
 
+        <section>
+            <h2>What Are HTML Semantic Tags?</h2>
+
+            <p>
+                HTML semantic tags are elements that clearly describe the
+                meaning and purpose of their content. They help browsers,
+                developers, and search engines understand the structure
+                of a webpage.
+            </p>
+
+            <p>
+                Unlike generic elements such as div and span, semantic
+                elements provide meaningful information about the content
+                they contain.
+            </p>
+
+            <p>Some commonly used HTML semantic tags include:</p>
+
+            <ul>
+                <li><code>&lt;header&gt;</code> - Defines introductory content or a page header.</li>
+                <li><code>&lt;nav&gt;</code> - Defines navigation links.</li>
+                <li><code>&lt;main&gt;</code> - Defines the main content of a webpage.</li>
+                <li><code>&lt;section&gt;</code> - Groups related content.</li>
+                <li><code>&lt;article&gt;</code> - Defines independent, self-contained content.</li>
+                <li><code>&lt;footer&gt;</code> - Defines footer information.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Examples of HTML Semantic Tags</h2>
+
+            <p>
+                The following example demonstrates how semantic tags
+                can be used together to create a well-structured webpage.
+            </p>
+
+            <pre><code>
+&lt;header&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;nav&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+    &lt;section&gt;
+        &lt;h2&gt;About HTML&lt;/h2&gt;
+        &lt;p&gt;HTML structures web content.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;article&gt;
+        &lt;h2&gt;Why Learn HTML?&lt;/h2&gt;
+        &lt;p&gt;HTML is the foundation of webpages.&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;Copyright 2026&lt;/p&gt;
+&lt;/footer&gt;
+    </code></pre>
+
+            <p>
+                These elements give different parts of the webpage
+                meaningful structure, making the content easier
+                to understand and maintain.
+            </p>
+        </section>
+
+
+
+
         <!-- LIST ELEMENTS -->
         <section id="lists">
 
@@ -397,11 +496,8 @@ function greet() {
 
             <figure>
 
-                <img
-                    src="https://placehold.co/600x300"
-                    alt="Placeholder demonstration image"
-                    width="600"
-                >
+                <img src="https://placehold.co/600x300" alt="Placeholder image demonstrating an HTML image element"
+                    width="600">
 
                 <figcaption>
                     Figure 1: An example of an HTML image.
@@ -512,40 +608,22 @@ function greet() {
 
                     <label for="name">Full Name:</label>
 
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Enter your name"
-                    >
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
 
 
                     <label for="email">Email:</label>
 
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email"
-                    >
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
 
 
                     <label for="password">Password:</label>
 
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                    >
+                    <input type="password" id="password" name="password">
 
 
                     <label for="age">Age:</label>
 
-                    <input
-                        type="number"
-                        id="age"
-                        name="age"
-                    >
+                    <input type="number" id="age" name="age">
 
 
                     <label for="gender">Gender:</label>
@@ -574,12 +652,7 @@ function greet() {
 
                     <label for="message">Your Message:</label>
 
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="4"
-                        placeholder="Write something..."
-                    ></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="Write something..."></textarea>
 
 
                     <button type="submit">Submit Form</button>
@@ -691,4 +764,5 @@ function greet() {
     </footer>
 
 </body>
+
 </html>
